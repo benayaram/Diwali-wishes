@@ -1,7 +1,7 @@
 {
   "name": "diwali-wish",
   "version": "0.1.0",
-  "homepage": "https://benayaram.github.io/Diwali-wishes",  
+  "homepage": "https://benayaram.github.io/Diwali-wishes/",  
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
