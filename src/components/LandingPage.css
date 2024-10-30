@@ -1,0 +1,94 @@
+/* Importing the custom MagicFont for Diwali text */
+@font-face {
+    font-family: 'MagicFont';
+    src: url('../assets/fonts/HarryPotter.ttf') format('truetype'); /* Adjust the path if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Overall Landing Page Style */
+.landingPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0c0f26, #1a1a2e);
+    flex-direction: column;
+}
+
+/* Harry Potter-like Text */
+.diwaliText {
+    font-family: 'MagicFont';
+    font-size: 7em;
+    color: #ffffff;
+    text-shadow: 0px 0px 8px rgba(255, 255, 153, 0.8), 
+                 0px 0px 12px rgba(255, 204, 0, 0.6);
+    animation: glow 2s infinite alternate;
+    margin-bottom: 20px;
+    text-align: center; /* Center text horizontally */
+}
+
+/* HUD-Style Enter Button */
+.enterButton {
+    background: transparent; /* Transparent background */
+    color: #ffd700;
+    border: 2px solid #0091ff; /* Gold border */
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s;
+    text-transform: uppercase; /* Uppercase text for HUD style */
+}
+
+/* Gradient border effect */
+.enterButton::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #009cfe, #ff8000, #00c8ff);
+    border-radius: 10px;
+    z-index: -1;
+    filter: blur(6px); /* Softens the glow */
+    transition: opacity 0.3s;
+    opacity: 0.7;
+}
+
+/* Pulsing animation */
+.enterButton::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #00aaff, #ff8000, #0f93b4);
+    border-radius: 10px;
+    z-index: -2;
+    opacity: 0;
+    filter: blur(10px);
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
+/* Hover effect for additional glow */
+.enterButton:hover {
+    color: #00ddff;
+}
+
+.enterButton:hover::before {
+    opacity: 1;
+}

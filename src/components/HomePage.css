@@ -1,0 +1,166 @@
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #0c0f26, #1a1a2e);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease; /* Smooth transition */
+}
+
+.homePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.glassEffect {
+  background: rgba(0, 0, 0, 0.5); /* Darker glass effect */
+  border-radius: 15px;
+  backdrop-filter: blur(15px); /* Stronger blur for a HUD feel */
+  box-shadow: 0 4px 30px rgba(0, 255, 255, 0.3); /* Cyan shadow for a futuristic touch */
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  position: relative; /* Required for pseudo-elements */
+}
+
+/* Adding HUD style glow effect */
+.glassEffect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.4), rgba(0, 42, 255, 0.4));
+  opacity: 0.4; /* Slight opacity for a glowing effect */
+  filter: blur(20px);
+  z-index: -1; /* Behind the content */
+}
+
+h1 {
+  color: #ffd700; /* Gold for the title */
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.8); /* Glowing text */
+}
+
+.nameInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent input */
+  color: #fff;
+  transition: background 0.3s;
+}
+
+/* Placeholder color */
+.nameInput::placeholder {
+  color: #ddd;
+}
+
+/* Submit Button with HUD Design */
+.submitButton {
+  padding: 10px 20px;
+  border: 2px solid #ffd700; /* Gold border */
+  border-radius: 5px;
+  background: transparent; /* Transparent background */
+  color: #ffd700; /* Text color */
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  position: relative; /* Required for pseudo-elements */
+}
+
+/* Adding glowing effect */
+.submitButton::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #00ffff, #c300ff);
+  opacity: 0.4;
+  filter: blur(8px);
+  z-index: -1; /* Behind the button */
+}
+
+.submitButton:hover {
+  background: #ffd700; /* Gold on hover */
+  color: #0c0f26; /* Change text color on hover */
+}
+
+/* Transition to white effect */
+body.transition-to-white {
+  background-color: white; /* Change body background to white */
+}
+
+/* Disable button during transition */
+.submitButton:disabled {
+  pointer-events: none; /* Disable button during transition */
+}
+
+/* Responsive Styles */
+
+/* Large Desktop and Desktop Screens */
+@media (min-width: 1024px) {
+  .glassEffect {
+    max-width: 400px;
+    padding: 50px 30px;
+  }
+
+  .submitButton {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+/* Tablet Screens */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .glassEffect {
+    max-width: 90%;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .submitButton {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 599px) {
+  .glassEffect {
+    max-width: 100%;
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .submitButton {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}

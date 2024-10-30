@@ -1,0 +1,74 @@
+.wishPage {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent overflow */
+  color: white; /* Text color for visibility */
+}
+
+.fireworks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width */
+  height: 100vh; /* Use viewport height */
+  pointer-events: none; /* Allow interaction with elements above */
+  z-index: -1; /* Fireworks behind text */
+}
+
+.cursor {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red; /* Cursor color */
+  pointer-events: none; /* Prevent cursor from blocking clicks */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em; /* Adjust font size for better visibility */
+  margin-bottom: 20px; /* Space between text and button */
+}
+
+/* Style for the Start Fireworks button */
+.startfireworks {
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.2em; /* Font size for the button */
+  cursor: pointer;
+  background-color: rgba(255, 204, 0, 0.8); /* Button color with transparency */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+.startfireworks:hover {
+  background-color: rgba(255, 204, 0, 1); /* Solid color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em; /* Smaller font size for tablets */
+  }
+
+  .startfireworks {
+      font-size: 1em; /* Adjust button font size for tablets */
+      padding: 8px 16px; /* Adjust padding for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5em; /* Smaller font size for mobile devices */
+  }
+
+  .startfireworks {
+      font-size: 0.9em; /* Adjust button font size for mobile */
+      padding: 6px 12px; /* Adjust padding for mobile */
+  }
+}
