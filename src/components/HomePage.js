@@ -15,7 +15,7 @@ function HomePage() {
 
       // Wait for the transition to complete before navigating
       setTimeout(() => {
-        navigate('/Diwali-wishes/wish'); // Redirect to the wishes page
+        navigate('/wish'); // Redirect to the wishes page
       }, 500); // Delay should match the transition duration
     }
   };
