@@ -8,9 +8,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} /> {/* Your LandingPage */}
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/wish" element={<WishPage />} />
+        <Route path="/Diwali-wishes" element={<LandingPage />} /> {/* Your LandingPage */}
+        <Route path="/Diwali-wishes/home" element={<HomePage />} />
+        <Route path="/Diwali-wishes/wish" element={<WishPage />} />
       </Routes>
     </Router>
   );

@@ -6,7 +6,7 @@ function LandingPage() {
   const navigate = useNavigate();
 
   const handleEnter = () => {
-    navigate('/home'); // Navigate to the HomePage
+    navigate('/Diwali-wishes/home'); // Navigate to the HomePage
   };
 
   return (
