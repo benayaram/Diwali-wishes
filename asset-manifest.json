@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Diwali-wishes/Diwali-wishes/static/css/main.a4d1ef80.css",
-    "main.js": "/Diwali-wishes/Diwali-wishes/static/js/main.56451a03.js",
+    "main.js": "/Diwali-wishes/Diwali-wishes/static/js/main.f2b5f1b9.js",
     "static/js/539.15121aeb.chunk.js": "/Diwali-wishes/Diwali-wishes/static/js/539.15121aeb.chunk.js",
     "static/js/453.6d430d3d.chunk.js": "/Diwali-wishes/Diwali-wishes/static/js/453.6d430d3d.chunk.js",
     "static/media/HarryPotter.ttf": "/Diwali-wishes/Diwali-wishes/static/media/HarryPotter.61090fcb66b8942c5664.ttf",
     "index.html": "/Diwali-wishes/Diwali-wishes/index.html",
     "main.a4d1ef80.css.map": "/Diwali-wishes/Diwali-wishes/static/css/main.a4d1ef80.css.map",
-    "main.56451a03.js.map": "/Diwali-wishes/Diwali-wishes/static/js/main.56451a03.js.map",
+    "main.f2b5f1b9.js.map": "/Diwali-wishes/Diwali-wishes/static/js/main.f2b5f1b9.js.map",
     "539.15121aeb.chunk.js.map": "/Diwali-wishes/Diwali-wishes/static/js/539.15121aeb.chunk.js.map",
     "453.6d430d3d.chunk.js.map": "/Diwali-wishes/Diwali-wishes/static/js/453.6d430d3d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4d1ef80.css",
-    "static/js/main.56451a03.js"
+    "static/js/main.f2b5f1b9.js"
   ]
 }
